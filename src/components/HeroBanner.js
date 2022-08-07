@@ -1,8 +1,19 @@
 import React from 'react'
 import { Box, Stack, Typography, Button } from '@mui/material'
 import HeroBannerImage from '../assets/images/banner.png'
+import Lottie from 'react-lottie'
+import data from './data.json'
 
 const HeroBanner = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: data,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  }
+
   return (
     <Box
       sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }}
@@ -43,22 +54,7 @@ const HeroBanner = () => {
           Explore Exercises
         </a>
       </Stack>
-      <Typography
-        fontWeight={600}
-        color='#FF2625'
-        sx={{
-          opacity: '0.1',
-          display: { lg: 'block', xs: 'none' },
-          fontSize: '200px',
-        }}
-      >
-        Exercise
-      </Typography>
-      <img
-        src={HeroBannerImage}
-        alt='hero-banner'
-        className='hero-banner-img'
-      />
+      <Lottie options={defaultOptions} height={400} width={600} />
     </Box>
   )
 }
