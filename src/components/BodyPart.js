@@ -13,7 +13,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       sx={
         bodyPart === item
           ? {
-              borderTop: '4px solid #FF2625',
+              borderTop: '4px solid #DE6D6A',
               background: '#fff',
               borderBottomLeftRadius: '20px',
               width: '270px',
@@ -43,7 +43,6 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       <Typography
         fontSize='24px'
         fontWeight='bold'
-        fontFamily='Alegreya'
         color='#3A1212'
         textTransform='capitalize'
       >
