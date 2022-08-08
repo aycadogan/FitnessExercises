@@ -11,8 +11,8 @@ const Navbar = () => {
       justifyContent='space-around'
       sx={{
         gap: { sm: '123px', xs: '40px' },
-        mt: { sm: '32px', xs: '20px' },
-        justifyContent: 'none',
+        mt: { sm: '12px', xs: '8px' },
+        // justifyContent: 'none',
       }}
       px='20px'
     >
@@ -20,7 +20,7 @@ const Navbar = () => {
         <img
           src={Logo}
           alt='logo'
-          style={{ width: '100px', height: '100px', margin: '0 10px' }}
+          style={{ width: '90px', height: '90px', margin: '0 10px' }}
         />
       </Link>
       <Stack direction='row' gap='40px' fontSize='24px' alignItems='flex-end'>
