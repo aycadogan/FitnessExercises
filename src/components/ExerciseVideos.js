@@ -1,9 +1,9 @@
 import React from 'react'
 import { Typography, Box, Stack } from '@mui/material'
-// import Loader from './Loader'
+import Loader from './Loader'
 
 const ExerciseVideos = ({ exerciseVideos, name }) => {
-  if (!exerciseVideos.length) return 'Loading...'
+  if (!exerciseVideos.length) return <Loader />
 
   return (
     <Box sx={{ marginTop: { lg: '203px', xs: '20px' } }} p='20px'>
@@ -14,7 +14,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         mb='33px'
       >
         Watch{' '}
-        <span style={{ color: '#DE6D6A', textTransform: 'capitalize' }}>
+        <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>
           {name}
         </span>{' '}
         exercise videos

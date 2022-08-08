@@ -17,7 +17,7 @@ const HeroBanner = () => {
     <div className='landing-page'>
       <div className='text-zone'>
         <Box
-          sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }}
+          sx={{ mt: { lg: '80px', xs: '20px' }, ml: { sm: '50px' } }}
           position='relative'
           p='20px'
         >
@@ -26,14 +26,14 @@ const HeroBanner = () => {
           </Typography>
           <Typography
             fontWeight={700}
-            sx={{ fontSize: { lg: '44px', xs: '40px' } }}
+            sx={{ fontSize: { lg: '48px', xs: '44px' } }}
             mb='23px'
-            mt='30px'
+            mt='40px'
           >
-            Move, Sweat <br />
+            Move,Sweat <br />
             And Repeat
           </Typography>
-          <Typography fontSize='22px' lineHeight='35px'>
+          <Typography fontSize='22px' lineHeight='35px' fontWeight='300'>
             Check out the most effective exercises personalized to you
           </Typography>
           <Stack>
