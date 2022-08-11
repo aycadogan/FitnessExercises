@@ -1,19 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack, Typography } from '@mui/material'
 
 import Icon from '../assets/icons/gym.png'
 
-import all from '../assets/categories/all.png'
-import arms from '../assets/categories/arms.png'
-import back from '../assets/categories/back.png'
-import cardio from '../assets/categories/cardio.png'
-import chest from '../assets/categories/chest.png'
-import legs from '../assets/categories/legs.png'
-import neck from '../assets/categories/neck.png'
-import shoulder from '../assets/categories/shoulder.png'
-import waist from '../assets/categories/waist.png'
-
-const BodyPart = ({ item, setBodyPart, bodyPart }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart, image }) => {
   return (
     <Stack
       type='button'
@@ -45,11 +35,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
       }}
     >
-      <img
-        src={Icon}
-        alt='dumbbell'
-        style={{ width: '40px', height: '40px' }}
-      />
+      <img src={image} style={{ width: '40px', height: '40px' }} />
       <Typography
         fontSize='24px'
         fontWeight='bold'
