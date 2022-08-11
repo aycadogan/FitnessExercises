@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Stack, Typography } from '@mui/material'
 
 const BodyPart = ({ item, setBodyPart, bodyPart, image }) => {
@@ -33,7 +33,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart, image }) => {
         window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
       }}
     >
-      <img src={image} style={{ width: '40px', height: '40px' }} />
+      <img src={image} alt='img' style={{ width: '40px', height: '40px' }} />
       <Typography
         fontSize='24px'
         fontWeight='bold'
